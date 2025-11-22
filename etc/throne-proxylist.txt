@@ -1,0 +1,7 @@
+keyword:googleapis.com
+keyword:githubcopilot.com
+keyword:chatgpt.com
+keyword:openai.com
+processName:Update.exe
+processName:Discord.exe
+

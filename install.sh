@@ -92,6 +92,7 @@ conf_map=(
     "$SD/kitty:$HD/.config/kitty"
     "$SD/shells/fish:$HD/.config/fish"
     "$SD/etc/oomd.conf:/etc/systemd/oomd.conf"
+    "$SD/etc/zapret.conf:/opt/zapret/config"
 )
 
 for conf in "${conf_map[@]}"; do
@@ -103,6 +104,7 @@ done
 echo "INFO: enabling services"
 systemctl enable ly
 systemctl enable --now systemd-oomd
+systemctl enable --now zapret
 
 echo "INFO: switching shell"
 chsh root -s /bin/fish
