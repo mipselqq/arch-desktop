@@ -3,4 +3,6 @@ keyword:alkalimakersuite-pa
 keyword:githubcopilot.com
 keyword:chatgpt.com
 keyword:openai.com
+keyword:youtube.com
+processName:Discord
 

@@ -59,7 +59,7 @@ CAT_VIRT="virt-manager qemu-desktop libvirt edk2-vmf dnsmasq"
 CAT_ARCHIEVES="tar 7zip unzip"
 CAT_MEDIA="pipewire pipewire-pulse juk vlc"
 CAT_COMPAT="xorg-xwayland wine winetricks"
-CAT_ROSKOMZALUPA="zapret throne-bin"
+CAT_ROSKOMZALUPA="throne-bin"
 CAT_ALL="$CAT_DE $CAT_THEMING $CAT_UTILS $CAT_SHELL $CAT_BUILD $CAT_AUTH $CAT_DEV $CAT_FONTS\
 	$CAT_DURABILITY $CAT_APPS $CAT_VIRT $CAT_ARCHIEVES $CAT_MEDIA $CAT_COMPAT $CAT_ROSKOMZALUPA"
 
@@ -92,7 +92,6 @@ conf_map=(
     "$SD/kitty:$HD/.config/kitty"
     "$SD/shells/fish:$HD/.config/fish"
     "$SD/etc/oomd.conf:/etc/systemd/oomd.conf"
-    "$SD/etc/zapret.conf:/opt/zapret/config"
 )
 
 for conf in "${conf_map[@]}"; do
@@ -104,7 +103,6 @@ done
 echo "INFO: enabling services"
 systemctl enable ly
 systemctl enable --now systemd-oomd
-systemctl enable --now zapret
 
 echo "INFO: switching shell"
 chsh root -s /bin/fish
