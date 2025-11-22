@@ -46,7 +46,7 @@ update_mirrorlist() {
 }
 
 CAT_DE="plasma-meta ly"
-CAT_APPS="kitty qbittorrent firefox telegram-desktop discord"
+CAT_APPS="kitty qbittorrent firefox telegram-desktop discord onlyoffice-bin"
 CAT_THEMING="qt6ct nwg-look breeze breeze-gtk"
 CAT_UTILS="wl-clipboard fzf fastfetch btop jq awk"
 CAT_SHELL="fish fzf less"
